@@ -10,10 +10,12 @@
     />
     <style>
       body {
+        font-family: "Poppins", sans-serif;
         display: flex;
         justify-content: center;
         height: 100vh;
         margin: 0;
+        background-color: grey;
       }
 
       .outer-wrapper {
@@ -57,6 +59,7 @@
         border-radius: 2vw;
         display: flex;
         flex-direction: column;
+        padding-bottom: 2vw;
       }
 
       img.responsive {
@@ -100,7 +103,7 @@
 
       .title-text {
         color: #000;
-        font-size: 2.2vw;
+        font-size: 1.9vw;
         font-weight: bold;
       }
 
@@ -110,7 +113,7 @@
 
       .info-text {
         color: #000;
-        font-size: 1.8vw;
+        font-size: 1.7vw;
         display: block;
         margin-bottom: 0.2vw;
       }
@@ -121,6 +124,81 @@
 
       .bold-text {
         font-weight: bold;
+      }
+
+      .section3-wrapper {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        text-align: left;
+      }
+
+      .greeting {
+        color: #000;
+        display: block;
+        font-weight: bold;
+        font-size: 4vw;
+        padding-top: 7vw;
+        padding-bottom: 2vw;
+      }
+
+      .message {
+        color: #000;
+        display: block;
+        font-size: 2.5vw;
+        padding-bottom: 4vw;
+      }
+
+      .button-blue,
+      .button-green {
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 3vw;
+        width: 55vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+      }
+
+      .button-blue {
+        background-color: #3f97ff;
+        border: 1vw solid #c7e4ff;
+        color: white;
+      }
+
+      .button-green {
+        background-color: #00c814;
+        border: 1vw solid #83d46f;
+        color: white;
+        margin-top: 3vw;
+      }
+
+      .class-intro {
+        color: #000;
+        display: block;
+        font-weight: bold;
+        font-size: 2.4vw;
+        margin-bottom: 1.5vw;
+        margin-top: 4vw;
+      }
+
+      .class-year {
+        color: #000;
+        display: block;
+        font-size: 3vw;
+        font-weight: bold;
+      }
+
+      .gift-img {
+        width: 35vw;
+        height: 30vw;
+      }
+
+      .giftSectionContainer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5vw;
       }
 
       @media (min-width: 601px) {
@@ -141,6 +219,7 @@
           height: 264px;
           margin-top: 42px;
           margin-bottom: 42px;
+          padding-bottom: 12px;
         }
 
         .image-box {
@@ -169,7 +248,7 @@
         }
 
         .title-text {
-          font-size: 13px;
+          font-size: 11px;
         }
 
         .logo {
@@ -177,7 +256,7 @@
         }
 
         .info-text {
-          font-size: 11px;
+          font-size: 9px;
         }
 
         .info-text:not(.clubs) {
@@ -186,6 +265,57 @@
 
         .info-text.clubs {
           margin-bottom: 3px;
+        }
+        .section3-wrapper {
+          padding-left: 60px;
+          padding-right: 60px;
+        }
+
+        .greeting {
+          font-size: 24px;
+          padding-top: 42px;
+          padding-bottom: 12px;
+        }
+
+        .message {
+          font-size: 15px;
+          padding-bottom: 24px;
+        }
+
+        .button-blue {
+          font-size: 18px;
+          width: 330px;
+          padding-top: 6px;
+          padding-bottom: 6px;
+          border: 6px solid #c7e4ff;
+        }
+        .button-green {
+          font-size: 18px;
+          width: 330px;
+          padding-top: 6px;
+          padding-bottom: 6px;
+          border: 6px solid #83d46f;
+          margin-top: 18px;
+        }
+
+        .class-intro {
+          font-size: 14.4px;
+          margin-bottom: 9px;
+          margin-top: 24px;
+        }
+
+        .class-year {
+          font-size: 18px;
+        }
+
+        .gift-img {
+          width: 210px;
+          height: 180px;
+        }
+        .giftSectionContainer {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 30px;
         }
       }
     </style>
@@ -226,6 +356,44 @@
               <span class="bold-text">clubs apart of</span> Alpha Phi, Girl
               Gains, Tennis Club
             </span>
+          </div>
+        </div>
+      </div>
+      <!-- Section 3 white background-color -->
+      <div class="section3-wrapper">
+        <span class="greeting">Hi Zoe,</span>
+        <span class="message"
+          >Congrats on being accepted to CSU - Sacramento! You are invited to
+          the Class of 2027 Groupchat and meet SacState Champion! You can ask
+          any questions and meet everyone starting this fall!</span
+        >
+
+        <button
+          class="button-blue"
+          onmouseover="this.style.textDecoration='underline';"
+          onmouseout="this.style.textDecoration='none';"
+        >
+          Join the Class of 2027 Group Chat
+        </button>
+
+        <button
+          class="button-green"
+          onmouseover="this.style.textDecoration='underline';"
+          onmouseout="this.style.textDecoration='none';"
+        >
+          Chat with Current Students
+        </button>
+
+        <div class="giftSectionContainer">
+          <div style="width: 50%">
+            <span class="class-intro">Meet your Class</span>
+            <span class="class-year">C'o 2027</span>
+          </div>
+
+          <div style="width: 50%; display: flex; justify-content: flex-end">
+            <div>
+              <img src="gift.png" alt="Gift Image" class="gift-img" />
+            </div>
           </div>
         </div>
       </div>
