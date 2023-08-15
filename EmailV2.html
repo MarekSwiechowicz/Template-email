@@ -8,8 +8,189 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="emailStyles.css" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .outer-wrapper {
+        width: 100%;
+        text-align: center;
+        max-width: 600px;
+      }
+
+      .black-bg {
+        background-color: #000;
+        padding-left: 10%;
+        padding-right: 10%;
+        display: flex;
+        align-items: center;
+      }
+
+      .green-bg {
+        background-color: #00c851;
+        padding-left: 10%;
+        padding-right: 10%;
+        display: flex;
+        align-items: center;
+      }
+
+      .media-font-size {
+        color: #000;
+        font-size: 5vw;
+        line-height: 7vw;
+      }
+
+      .media-font-size span {
+        color: #fff;
+      }
+
+      .white-box {
+        width: 44%;
+        height: 44vw;
+        background-color: #fff;
+        margin-top: 7vw;
+        margin-bottom: 7vw;
+        border-radius: 2vw;
+        display: flex;
+        flex-direction: column;
+      }
+
+      img.responsive {
+        width: 20%;
+      }
+
+      .image-box {
+        position: relative;
+        width: 31vw;
+        height: 31vw;
+        border-radius: 1vw;
+        margin-top: 1.3vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-bottom: 1vw;
+        background-image: url("face.png");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .inner-image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 5vw;
+        height: 5vw;
+      }
+
+      .outer-container {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        text-align: left;
+      }
+
+      .inner-container {
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        margin-bottom: 0.5vw;
+      }
+
+      .title-text {
+        color: #000;
+        font-size: 2.2vw;
+        font-weight: bold;
+      }
+
+      .logo {
+        height: 2vw;
+      }
+
+      .info-text {
+        color: #000;
+        font-size: 1.8vw;
+        display: block;
+        margin-bottom: 0.2vw;
+      }
+
+      .info-text.clubs {
+        margin-bottom: 0.5vw;
+      }
+
+      .bold-text {
+        font-weight: bold;
+      }
+
+      @media (min-width: 601px) {
+        body {
+          font-size: 20px;
+        }
+
+        .outer-wrapper {
+          width: 600px;
+        }
+
+        .media-font-size {
+          font-size: 30px !important;
+          line-height: 42px !important;
+        }
+
+        .white-box {
+          height: 264px;
+          margin-top: 42px;
+          margin-bottom: 42px;
+        }
+
+        .image-box {
+          width: 186px;
+          height: 186px;
+          border-radius: 6px;
+          margin-top: 8px;
+          margin-left: 12px;
+          margin-right: 12px;
+          margin-bottom: 6px;
+        }
+
+        .inner-image {
+          width: 30px;
+          height: 30px;
+        }
+
+        .outer-container {
+          margin-left: 12px;
+          margin-right: 12px;
+        }
+
+        .inner-container {
+          gap: 6px;
+          margin-bottom: 3px;
+        }
+
+        .title-text {
+          font-size: 13px;
+        }
+
+        .logo {
+          height: 12px;
+        }
+
+        .info-text {
+          font-size: 11px;
+        }
+
+        .info-text:not(.clubs) {
+          margin-bottom: 1px;
+        }
+
+        .info-text.clubs {
+          margin-bottom: 3px;
+        }
+      }
+    </style>
   </head>
+
   <body>
     <div class="outer-wrapper">
       <!-- Section 1: Black background with image -->
